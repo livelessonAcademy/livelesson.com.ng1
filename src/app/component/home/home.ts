@@ -1,0 +1,17 @@
+import { Component } from '@angular/core';
+import { Navbar } from '../navbar/navbar';
+
+@Component({
+  selector: 'app-home',
+  imports: [Navbar],
+  templateUrl: './home.html',
+  styleUrl: './home.css',
+})
+export class Home {
+  goToPlayStore() {
+    window.open(
+      'https://play.google.com/store/apps/details?id=jamb.postutme.waec.livelesson', // 🔁 Replace with your actual app link
+      '_blank'
+    );
+  }
+}
